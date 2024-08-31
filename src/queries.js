@@ -70,13 +70,13 @@ async function printHumansAndAnimals() {
     });
 
     // Join the array into a single string with newlines
-    return output.join('\n');
+    return output.join('\n'); //Join the array into a single string with newlines
   } catch (error) {
     console.error('Error fetching humans and animals:', error);
   }
 }
 
-// Example usage
+// Calling the function and then printing the result
 printHumansAndAnimals().then(console.log);
 
 // Return a Set containing the full names of all humans
@@ -109,7 +109,7 @@ async function getHumansByAnimalSpecies(species) {
   }
 }
 
-// Example usage:
+// Calling the function with dog as the argument and then passing humanNamesSet to console.log
 getHumansByAnimalSpecies('dog').then((humanNamesSet) => {
   console.log(humanNamesSet); // Outputs a Set of full names of humans who own dogs
 });
